@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
   
   <title>Weather </title>
@@ -7,7 +7,7 @@
     body {
       font-family: Arial, sans-serif;
       padding: 20px;
-      background-color: #f0f0f0;
+      background-color: #91929c;
     }
     #quote, #weather {
       margin-bottom: 20px;
@@ -17,9 +17,7 @@
       box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
     }
     
-    button:hover {
-      background-color: #0056b3;
-    }
+    
   </style>
 </head>
 <body>
@@ -28,6 +26,7 @@
 
   <div id="weather">
     <h2>Weather Data</h2>
+    <!-- <input type="text" id="city"> -->
     <p id="weather-info">Click the button to fetch weather data.</p>
     <button onclick="fetchWeather()">Fetch Weather</button>
   </div>

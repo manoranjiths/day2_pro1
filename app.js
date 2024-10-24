@@ -1,9 +1,11 @@
 
 const weatherApiKey = '1b5e358b58dd989e68f09ce5618321dd';
-const weatherApiUrl = `https://api.openweathermap.org/data/2.5/weather?q=London&appid=${weatherApiKey}&units=metric`;
+const city = document.getElementById('city');
+user_input = prompt("Enter a city","london")
+var weatherApiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${user_input}&appid=${weatherApiKey}&units=metric`;
 
 
-const quoteApiUrl = 'https://api.quotable.io/random';
+const quoteApiUrl = 'https://.quotable.io/random';
 
 
 function fetchWeather() {
